@@ -1,0 +1,81 @@
+/* General Styles */
+header {
+    background-color: rgb(240, 240, 240); /* Light Gray Background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark header {
+    background-color: rgb(30, 30, 30); /* Dark Mode */
+}
+
+/* Navigation Links */
+ul.items-stretch li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(60, 60, 60);
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+ul.items-stretch li a:hover {
+    color: rgb(138, 43, 226); /* Violet Hover Effect */
+    border-bottom: 2px solid rgb(138, 43, 226);
+}
+
+.dark ul.items-stretch li a {
+    color: rgb(200, 200, 200);
+}
+
+.dark ul.items-stretch li a:hover {
+    color: rgb(138, 43, 226);
+}
+
+/* Logo */
+a[aria-label="Back to homepage"] svg {
+    transition: transform 0.3s ease;
+}
+
+a[aria-label="Back to homepage"]:hover svg {
+    transform: rotate(10deg);
+}
+
+/* Search Bar */
+input[type="search"] {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 200, 200);
+    transition: background 0.3s ease, border 0.3s ease;
+}
+
+input[type="search"]:focus {
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(138, 43, 226);
+}
+
+/* Search Button */
+button[type="submit"] svg {
+    color: rgb(60, 60, 60);
+    transition: color 0.3s ease;
+}
+
+button[type="submit"]:hover svg {
+    color: rgb(138, 43, 226);
+}
+
+/* Login Button */
+button.dark\:bg-violet-600 {
+    background-color: rgb(138, 43, 226);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button.dark\:bg-violet-600:hover {
+    background-color: rgb(120, 30, 200);
+    transform: scale(1.05);
+}
+
+/* Mobile Menu Button */
+button[title="Open menu"] svg {
+    transition: stroke 0.3s ease;
+}
+
+button[title="Open menu"]:hover svg {
+    stroke: rgb(138, 43, 226);
+}
