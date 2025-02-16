@@ -1,128 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Improved Header</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        header {
-            background-color: rgb(240, 240, 240);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .dark header {
-            background-color: rgb(30, 30, 30);
-        }
-
-        ul.items-stretch li a {
-            font-size: 16px;
-            font-weight: 500;
-            color: rgb(60, 60, 60);
-            transition: color 0.3s ease, border-color 0.3s ease;
-        }
-
-        ul.items-stretch li a:hover {
-            color: rgb(138, 43, 226); 
-            border-bottom: 2px solid rgb(138, 43, 226);
-        }
-
-        .dark ul.items-stretch li a {
-            color: rgb(200, 200, 200);
-        }
-
-        a[aria-label="Back to homepage"] {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-        }
-
-        a[aria-label="Back to homepage"] svg {
-            width: 40px;
-            height: 40px;
-        }
-
-        input[type="search"] {
-            background-color: rgb(255, 255, 255);
-            border: 1px solid rgb(200, 200, 200);
-            transition: background 0.3s ease, border 0.3s ease;
-            padding-left: 35px;
-        }
-
-        input[type="search"]:focus {
-            background-color: rgb(245, 245, 245);
-            border: 1px solid rgb(138, 43, 226);
-        }
-
-        button[type="submit"] svg {
-            color: rgb(60, 60, 60);
-            transition: color 0.3s ease;
-        }
-
-        button[type="submit"]:hover svg {
-            color: rgb(138, 43, 226);
-        }
-
-        button.dark\:bg-violet-600 {
-            background-color: rgb(138, 43, 226);
-            transition: background 0.3s ease, transform 0.2s ease;
-        }
-
-        button.dark\:bg-violet-600:hover {
-            background-color: rgb(120, 30, 200);
-            transform: scale(1.05);
-        }
-    </style>
-</head>
-<body>
-
-<header class="p-4 dark:bg-gray-100 dark:text-gray-800">
-    <div class="container flex justify-between items-center h-16 mx-auto">
-        
-        <ul class="items-stretch hidden space-x-3 lg:flex">
-            <li class="flex">
-                <a href="#" class="flex items-center px-4 -mb-1 border-b-2 dark:border-violet-600 dark:text-violet-600">Home</a>
-            </li>
-            <li class="flex">
-                <a href="#" class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:dark:border-violet-600">About</a>
-            </li>
-            <li class="flex">
-                <a href="#" class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent hover:dark:border-violet-600">Contact</a>
-            </li>
-        </ul>
-
-       
-        <a href="#" aria-label="Back to homepage" class="flex items-center justify-center w-12 h-12">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-8 h-8 dark:text-violet-600">
-                <path d="M27.912 7.289l-10.324-5.961c-0.455-0.268-1.002-0.425-1.588-0.425s-1.133 0.158-1.604 0.433l0.015-0.008-10.324 5.961c-0.955 0.561-1.586 1.582-1.588 2.75v11.922c0.002 1.168 0.635 2.189 1.574 2.742l0.016 0.008 10.322 5.961c0.455 0.267 1.004 0.425 1.59 0.425 0.584 0 1.131-0.158 1.602-0.433l-0.014 0.008 10.322-5.961c0.955-0.561 1.586-1.582 1.588-2.75v-11.922c-0.002-1.168-0.633-2.189-1.573-2.742z"></path>
-            </svg>
-        </a>
-
-        
-        <div class="flex items-center md:space-x-4">
-            <div class="relative">
-                <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                    <button type="submit" title="Search" class="p-1 focus:outline-none focus:ring">
-                        <svg fill="currentColor" viewBox="0 0 512 512" class="w-4 h-4 dark:text-gray-800">
-                            <path d="M479.6,399.716l-81.084-81.084-62.368-25.767A175.014,175.014,0,0,0,368,192c0-97.047-78.953-176-176-176S16,94.953,16,192,94.953,368,192,368a175.034,175.034,0,0,0,101.619-32.377l25.7,62.2L400.4,478.911a56,56,0,1,0,79.2-79.195Z"></path>
-                        </svg>
-                    </button>
-                </span>
-                <input type="search" name="Search" placeholder="Search..." class="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none dark:bg-gray-100 dark:text-gray-800 focus:dark:bg-gray-50">
-            </div>
-            <button type="button" class="hidden px-6 py-2 font-semibold rounded lg:block dark:bg-violet-600 dark:text-gray-50">Log in</button>
-        </div>
-
-        
-        <button title="Open menu" type="button" class="p-4 lg:hidden">
-          <img src="logo.jpeg" alt="Web logo">
-      </button>
-      
-      
-    </div>
-</header>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber hunter</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
