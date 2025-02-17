@@ -1,0 +1,16 @@
+.header {
+    background-color: rgb(34, 40, 49);
+    color: rgb(238, 238, 238);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav a {
+    color: rgb(0, 173, 181);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+  
